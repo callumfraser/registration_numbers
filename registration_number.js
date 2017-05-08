@@ -7,7 +7,7 @@ var townFilter = document.getElementsByName("town");
 btn.addEventListener('click', function() {
   if(0 < plateTxt.value.length && plateTxt.value.length < 11){
     var newPlate = document.createElement('div');
-    var capitalTxt = plateTxt.value.substr(0,2).toUpperCase() + plateTxt.value.substr(3);
+    var capitalTxt = plateTxt.value.substr(0,2).toUpperCase() + plateTxt.value.substr(2);
     plateTxt.value.className = 'regPlates';
     newPlate.textContent = capitalTxt;
     newPlate.className = 'regPlates';
